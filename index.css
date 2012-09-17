@@ -1,0 +1,35 @@
+h1 {
+  font-family: 'Open Sans Light','Open Sans',sans-serif;
+  font-size: 2.0em;
+}
+
+h2 {
+  font-family: 'Open Sans Light','Open Sans',sans-serif;
+  font-size: 1.0em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.left {
+  float: left;
+  text-align: right;
+  padding-top: 10%;
+  width: 49%;
+}
+
+.right {
+  float: right;
+  padding-top: 10%;
+  width: 49%;
+}
+
+.links {
+  width: 220px;
+}
+
+.link {
+  height: 50px;
+  width: 50px;
+}
