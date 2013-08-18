@@ -1,35 +1,40 @@
-h1 {
-  font-family: 'Open Sans Light','Open Sans',sans-serif;
-  font-size: 2.0em;
+body {
+  background: url('fuji.jpg');
+  color: #FFF;
+  font-family: "Roboto",Arial,sans-serif;  
+  margin: 20% 0 0 3%;
 }
 
-h2 {
-  font-family: 'Open Sans Light','Open Sans',sans-serif;
-  font-size: 1.0em;
+img {
+  height: 48px;
+  width: 48px;
 }
 
-a {
-  text-decoration: none;
+li {
+  display: inline-block;
+  padding-top: 30px;
+  vertical-align: top;
+  *display: inline; zoom: 1;
 }
 
-.left {
-  float: left;
-  text-align: right;
-  padding-top: 10%;
-  width: 49%;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  white-space: nowrap;
+  *display: inline; zoom: 1;
 }
 
-.right {
-  float: right;
-  padding-top: 10%;
-  width: 49%;
+.hidden {
+  display: none;
 }
 
-.links {
-  width: 220px;
+.name {
+  font-size: 3.5em;
+  font-weight: bold;
 }
 
-.link {
-  height: 50px;
-  width: 50px;
+.title {
+  font-size: 1.5em;
 }
