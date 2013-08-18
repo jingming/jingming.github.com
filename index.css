@@ -14,6 +14,7 @@ li {
   display: inline-block;
   padding-top: 30px;
   vertical-align: top;
+  width: 50px;
   *display: inline; zoom: 1;
 }
 
@@ -28,6 +29,12 @@ ul {
 
 .hidden {
   display: none;
+  height: 0;
+}
+
+.caption {
+  font-style: italic;
+  padding: 4px 2px;
 }
 
 .name {
