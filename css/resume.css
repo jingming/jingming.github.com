@@ -10,6 +10,10 @@ body {
   width: 830px;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   display: inline-block;
   height: 75px;
