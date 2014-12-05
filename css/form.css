@@ -1,0 +1,198 @@
+body {
+  background-color: #eee;
+  font-family: Arial,Tahoma,"Bitstream Vera Sans",sans-serif;
+}
+
+ul {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+  padding: 0px;
+  list-style: outside none none;
+  text-align: left;
+}
+
+ul.likes,
+ul.interests {
+  width: 440px; 
+}
+
+li.check-item, 
+li.select-item {
+  border-bottom: 2px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+}
+
+.header {
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+  width: 984px;
+}
+
+.header .avatar {
+  position: absolute;
+  left: 388px; 
+  top: 100px;
+}
+
+.header .avatar img {
+  border-radius: 100%;
+  border: 2px solid #fff;
+  height: 100px;
+  width: 100px;
+}
+
+.header .details {
+  display: inline-block;
+  height: 298px;
+  padding: 20px 15px;
+  vertical-align: top;
+  width: 400px;
+}
+
+.header .details .city-name {
+  color: #ccc;
+  font-size: 42px;
+  margin-bottom: 140px;
+}
+
+.header .details .user-name {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.header .picture {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+}
+
+.header .picture img {
+  width: 543px; 
+}
+
+.form {
+  background-color: #fff;
+  width: 983px; 
+}
+
+.form .title {
+  background-color: #589442;
+  padding: 15px 20px;
+}
+
+.form .title .progress {
+  background-color: #4b7e37;
+  border-radius: 4px;
+  color: #fff;
+  float: right;
+  margin-top: -4px;
+  padding: 4px 8px;
+}
+
+.form .title .label {
+  color: #fff;
+  font-weight: bold;
+}
+
+.form .form-row {
+  border-bottom: 1px solid #eee;
+  margin: 0 15px;
+  padding: 15px 0;
+}
+
+.form .form-row .form-item {
+  display: inline-block;
+}
+
+.form .form-row .form-item .item-description {
+  margin-bottom: 10px; 
+}
+
+.form .form-row .form-item .item-description .number {
+  border-radius: 100%;
+  border: 1px solid #eee;
+  color: #ccc;
+  display: inline-block;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  width: 20px;
+}
+
+.form .form-row .form-item .item-description .number.selected {
+  color: #fff;
+  background-color: #4b7e37;
+  border-style: none;
+}
+
+.form .form-row .form-item .item-description .text {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.form .form-row .form-item .item-data .hotel-name {
+  border: 2px solid #4b7e37;
+  border-radius: 5px;
+  color: #BBB;
+  font-size: 18px;
+  margin-right: 40px;
+  padding: 5px;
+  width: 450px;
+}
+
+.form .form-row .form-item .item-data .hotel-date {
+  border-radius: 5px;
+  color: #BBB;
+  font-size: 18px;
+  padding: 5px;
+  width: 200px;
+}
+
+.view-all-placeholder {
+  margin: 0 5px 15px 0; 
+}
+
+.view-all-placeholder .view-all {
+  color: #069;
+  float: right;
+  font-size: 12px;
+}
+
+.bottom-row {
+  margin: 0 15px;
+  padding: 15px 0;
+  height: 40px;
+}
+
+.bottom-row .submit-button {
+  background-color: #4b7e37;
+  color: #fff;
+  float: right;
+  padding: 10px 15px;
+}
+
+.bottom-row .question {
+  font-size: 12px;
+  line-height: 40px; 
+}
+
+.bottom-row .question .question-label {
+  color: #ccc; 
+}
+
+.bottom-row .question .ask-expert {
+  color: #069; 
+}
