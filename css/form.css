@@ -32,7 +32,7 @@ li.select-item {
 .header {
   background-color: #fff;
   position: relative;
-  margin-bottom: 30px;
+  margin: 10px auto 30px auto;
   width: 984px;
 }
 
@@ -78,8 +78,29 @@ li.select-item {
   width: 543px; 
 }
 
+.shadow-flare:after {
+    transform: rotate(3deg) skew(-5deg);
+    right: 15px;
+}
+.shadow-flare:before {
+    transform: rotate(-3deg) skew(5deg);
+    left: 15px;
+}
+.shadow-flare:before, 
+.shadow-flare:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 20px;
+    width: 50%;
+    height: 80px;
+    box-shadow: 0px 24px 30px rgba(0, 0, 0, 0.36);
+}
+
+
 .form {
   background-color: #fff;
+  margin: 0 auto;
   width: 983px; 
 }
 
@@ -171,6 +192,40 @@ li.select-item {
   font-size: 12px;
 }
 
+.view-all-placeholder .view-all .arrow { 
+  position: relative; 
+  background: #fff; 
+  display: inline-block;
+  vertical-align: top;
+  margin: 4px 0 0 12px;
+}
+
+.view-all-placeholder .view-all .arrow:after, 
+.view-all-placeholder .view-all .arrow:before { 
+  top: 100%; 
+  left: 50%; 
+  border: solid transparent; 
+  content: " "; 
+  height: 0; 
+  width: 0; 
+  position: absolute; 
+  pointer-events: none; 
+} 
+
+.view-all-placeholder .view-all .arrow:after { 
+  border-color: rgba(255, 255, 255, 0); 
+  border-top-color: #fff; 
+  border-width: 4px; 
+  margin-left: -4px; 
+} 
+
+.view-all-placeholder .view-all .arrow:before { 
+  border-color: rgba(88, 148, 66, 0); 
+  border-top-color: #589442; 
+  border-width: 7px; 
+  margin-left: -7px; 
+}
+
 .bottom-row {
   margin: 0 15px;
   padding: 15px 0;
@@ -178,7 +233,7 @@ li.select-item {
 }
 
 .bottom-row .submit-button {
-  background-color: #4b7e37;
+  background-color: #589442;
   color: #fff;
   float: right;
   padding: 10px 15px;
