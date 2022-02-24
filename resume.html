@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Resume | Jingming Niu</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link href="css/resume.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -17,7 +17,7 @@
       <img class="profile" src="images/resume/profile.jpg" />
       <div class="name">
         <h1>Jingming Niu</h1>
-        <h2>Software Engineer</h2>
+        <h2>Technical Lead | Principal Software Engineer</h2>
       </div>
 
       <ul class="details">
@@ -27,18 +27,8 @@
         </li>
         
         <li>
-          <a class="caption" href="https://www.twitter.com/jingmingniu" target="_blank">@jingmingniu</a>
-          <img class="icon" src="images/resume/twitter.png" />
-        </li>
-        
-        <li>
           <a class="caption" href="https://www.linkedin.com/in/jmniu" target="_blank">/in/jmniu</a>
           <img class="icon" src="images/resume/linkedin.png" />
-        </li>
-
-        <li>
-          <a class="caption" href="https://www.github.com/jingming" target="_blank">jingming</a>
-          <img class="icon" src="images/resume/github.png" />
         </li>
       </ul>
     </div>
@@ -48,89 +38,190 @@
       <div class="section">
         <h3>Work Experience</h3>
 
+        <a href="http://www.twilio.com" target="_blank">
+          <img src="images/resume/twilio.png" />
+        </a>
+        <div class="job">
+          <div class="company">Twilio</div>
+          <div class="role">
+            <div class="title">Technical Lead | Principal Software Engineer</div>
+            <div class="date">September 2021 - </div>
+          </div>
+
+          <div class="role">
+            <div class="title">Technical Lead | Staff Software Engineer</div>
+            <div class="date">January 2020 - September 2021</div>
+          </div>
+
+          <div class="role">
+            <div class="title">Senior Software Engineer II</div>
+            <div class="date">May 2018 - January 2020</div>
+          </div>
+
+          <div class="role">
+            <div class="title">Senior Software Engineer</div>
+            <div class="date">December 2016 - May 2018</div>
+          </div>
+
+          <div class="role">
+            <div class="title">Software Engineer II</div>
+            <div class="date">July 2015 - December 2016</div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">
+            Growing / Stabilizing the Team
+          </div>
+          <div class="project-description">
+            Currently, I'm running point on a project to scale our oncall rotations as the team plans to double in size for 2022, an initiative to deprecate one 
+            of Twilio's last standing pieces of PHP code, an initiative to define SLOs for all of our systems, and growing engineers both within the Phone Numbers 
+            organization and broader Twilio.
+          </div>
+          <div class="project-description">
+            As the tenured engineer on the team, I now serve more of a consulting / overarching role. In general, this role involves me piloting programs with the 
+            other Technical Leads in the Phone Numbers organization, helping out with incidents, providing guidance on upcoming road map items, giving context on 
+            historical decisions, and helping onboard folks to any projects. I've built a light framework for all of our REST services so that various overhead is 
+            naturally taken care of and engineers can focus on implementation. I've piloted our <a href="https://www.terraform.io/">Terraform</a> initiative which 
+            the team is adopting to stabilize our infrastructure and metrics. 
+          </div>
+          <div class="project-tech">
+            Technologies Used: Java, Python, PHP, MySQL
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">
+            Regulatory Compliance
+          </div>
+          <div class="project-description">
+            Due to the <a href="https://www.twilio.com/blog/2017/09/phone-numbers-100-countries.html">international expansion</a> Twilio had done, we had to up-level 
+            our Product offerings to comply with Global Phone Number <a href="https://www.twilio.com/guidelines/regulatory">Regulations</a>. First as part of a 6 person 
+            tiger team, I was brought in to patch the existing system to allow for customers to submit Regulatory Documents so that they could come into compliance with 
+            local regulations. 
+          </div>
+          <div class="project-description">
+            After this was completed, I stayed on the team and was a lead engineer on the team that built a modernized  
+            <a href="https://www.twilio.com/docs/phone-numbers/regulatory/getting-started">Regulatory</a> Product that launched December 2019 which allows all customers 
+            to keep up with any local requirements. On top of Phone Numbers Regulatory concerns, this product now serves as the framework for the Twilio 
+            <a href="https://www.twilio.com/docs/trust-hub">Trust Hub</a> Product.
+          </div>
+          <div class="project-tech">
+            Technologies Used: Java, Python, PHP, MySQL
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">
+            Help @ SIGNAL
+          </div>
+          <div class="project-description">
+            With <a href="https://www.twilio.com/flex">Flex</a> being the big product launch at SIGNAL 2018, I built a Contact Center on top of Flex that would serve as 
+            support for the conference. Over the course of the 2 day conference, this application served 2000+ interactions via Voice, SMS, Messenger, WhatsApp, and Fax.
+          </div>
+          <div class="project-tech">
+            Technologies Used: Python, React
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">
+            API Definitions
+          </div>
+          <div class="project-description">
+            With the growing number of teams and products at Twilio, it became unsustainable to have the team write code for each API that Twilio introduced. 
+            As a result, we extended the Helper Library Generation platform that was built into the API Proxy so that teams would be able to define the API 
+            Proxy as well as the Helper Libraries. This platform now serves as the single point of truth for the entire Twilio API. Additionally, this project 
+            served as a key instrument in our <a href="https://www.twilio.com/blog/2017/02/easily-make-api-calls-to-any-twilio-product-using-the-new-api-explorer.html">API Explorer</a>, 
+            <a href="https://www.twilio.com/docs/runtime/functions">Functions</a>, and <a href="https://www.twilio.com/docs/usage/api">Documentation</a> Products.
+          </div>
+          <div class="project-tech">
+            Technologies Used: Python
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">
+            Helper Library Generation
+          </div>
+          <div class="project-description">
+            Twilio provides Helper Libraries in 6 languages (<a href="https://github.com/twilio/twilio-csharp">C#</a>, <a href="https://github.com/twilio/twilio-java">Java</a>, 
+            <a href="https://github.com/twilio/twilio-node">node.js</a>, <a href="https://github.com/twilio/twilio-php">PHP</a>, 
+            <a href="https://github.com/twilio/twilio-python">Python</a>, <a href="https://github.com/twilio/twilio-csharp">Ruby</a>) to simplify building on top of the API. 
+            Since they are mostly wrappers around the API, the team started building a tool to auto-generate these libraries when a change was made in the API. 
+            To start, I was in charge of building the Java and node.js libraries. After some organizational changes, I took over leadership of this project and drove it to 
+            completion with all 6 libraries being generated through the tool. This brought down the time to update all the libraries from roughly 2 weeks of engineering time 
+            (for one engineer) to 30 seconds on top of significantly reducing the number of bugs caused by removing humans from the flow.
+          </div>
+          <div class="project-tech">
+            Technologies Used: Python, node.js, Java, C#, Ruby, PHP
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">
+            Public API Proxy
+          </div>
+          <div class="project-description">
+            To provide a consistent experience across all of the APIs at Twilio, there exists a proxy layer that handles all incoming requests, authentication, and transforms any of the 
+            data necessary before sending it to the appropriate product stack. I added all the integrations necessary to expose the <a href="https://www.twilio.com/docs/chat">Chat</a>, 
+            <a href="https://www.twilio.com/sip-trunking">Trunking</a>, and <a href="https://www.twilio.com/notify">Notify</a> Products to the public.
+          </div>
+          <div class="project-tech">
+            Technologies Used: Python
+          </div>
+        </div>
+
         <a href="http://www.tripadvisor.com" target="_blank">
           <img src="images/resume/tripadvisor.jpg" />
         </a>
         <div class="job">
           <div class="company">TripAdvisor</div>
           <div class="title">Software Engineer</div>
-          <div class="date">August 2012 -</div>
+          <div class="date">August 2012 - May 2015</div>
         </div>
-        <ul class="description">
-          <li>
-            Currently focusing on launching a new <a href="http://www.tripadvisor.com/Travel_Guide-g186338-London_England.html" target="_blank">Travel Guides</a> product to help travelers build their itinerary 
-          </li>
-
-          <li>
-            Primary developer on TripAdvisor's <a href="https://developers.facebook.com/docs/games/notifications/" target="_blank">Facebook Notification</a> campaigns
-          </li>
-
-          <li>
-            Key member of the 2013 redesign of <a href="https://apps.facebook.com/tripadvisor" target="_blank">TripAdvisor's Facebook Application</a>
-          </li>
-
-          <li>
-            Responsible for operations work done by the team - dubbed "Social IT guy"
-          </li>
-        </ul>
-
-      </div>
-
-      <div class="section">
-        <h3>Internships</h3>
-
-        <a href="http://www.tripadvisor.com" target="_blank">
-          <img src="images/resume/tripadvisor.jpg" />
-        </a>
-        <div class="job">
-          <div class="company">TripAdvisor</div>
-          <div class="title">Software Engineering Intern</div>
-          <div class="date">September 2011 - December 2011</div>
+        <div class="project">
+          <div class="project-title">
+            Just For You Guides
+          </div>
+          <div class="project-description">
+            To further improve the <a href="https://www.tripadvisor.com/Travel_Guide-g186338-London_England.html">Travel Guide</a> experience that had recently launched, 
+            I led a project to introduce Just For You Guides to the TripAdvisor experience. On the TripAdvisor side, an interface was built for selected experts 
+            in cities around the world to add recommendations based on a defined set of tags. On the customer side, a separate interface was built to select the 
+            type of trip they were looking for based on the same set of tags. Once the user had submitted their request, they would receive a link to 
+            their specially generated guide within 24 hours.
+          </div>
+          <div class="project-tech">
+            Technologies Used: Java, JavaScript, Dust.js, less, PostgreSQL
+          </div>
         </div>
 
-        <a href="http://www.qualcomm.com" target="_blank">
-          <img src="images/resume/qualcomm.jpg" />
-        </a>
-        <div class="job">
-          <div class="company">Qualcomm</div>
-          <div class="title">Software Engineering Intern</div>
-          <div class="date">January 2011 - April 2011</div>
+        <div class="project">
+          <div class="project-title">
+            TripAdvisor Facebook Application
+          </div>
+          <div class="project-description">
+            In an effort to modernize the TripAdvisor Facebook Application, I helped build a various pages as part of a complete redesign. This included Travel Map page which 
+            allowed a user to pin the places where they've visited and pages to summarize each city that the user had visited. Leveraging all the travel data for a user's friends, 
+            we were also able improve the social experience by building pages to highlight all the places a user's friends had been. Parts of this effort still exist as part of
+            <a href="https://www.tripadvisor.com/TravelMap-a_uid.761518CCF6E24A12708C8A539D3E8F64">this</a> page.
+          </div>
+          <div class="project-tech">
+            Technologies Used: Java, JavaScript, Dust.js, less, Apache Velocity, PostgreSQL
+          </div>
         </div>
 
-        <a href="http://www.rim.com" target="_blank">
-          <img src="images/resume/rim.jpg" />
-        </a>
-        <div class="job">
-          <div class="company">Research In Motion</div>
-          <div class="title">Embedded Systems Software Engineer</div>
-          <div class="date">May 2010 - August 2010</div>
-        </div>
-
-        <a href="http://www.ncr.com" target="_blank">
-          <img src="images/resume/ncr.png" />
-        </a>
-        <div class="job">
-          <div class="company">NCR</div>
-          <div class="title">Software Developer</div>
-          <div class="date">September 2009 - December 2009</div>
-        </div>
-
-        <a href="http://esq.uwaterloo.ca" target="_blank">
-          <img src="images/resume/esq.png" />
-        </a>
-        <div class="job">
-          <div class="company">Engineering Science Quest</div>
-          <div class="title">Technology Manager</div>
-          <div class="date">January 2009 - August 2009</div>
-        </div>
-
-        <a href="http://esq.uwaterloo.ca" target="_blank">
-          <img src="images/resume/esq.png" />
-        </a>
-        <div class="job">
-          <div class="company">Engineering Science Quest</div>
-          <div class="title">University Leader</div>
-          <div class="date">May 2008 - August 2008</div>
+        <div class="project">
+          <div class="project-title">
+            Facebook Notifications
+          </div>
+          <div class="project-description">
+            Using Facebook's App-to-User Notifications, I built a platform to encourage engagement with the TripAdvisor Facebook Application based on a user's travels including cities visited, 
+            locations rated, and friends joining. This campaign drove TripAdvisor to be the top amongst all apps in monthly active users in November 2012.
+          </div>
+          <div class="project-tech">
+            Technologies Used: Java, Hive, Hadoop
+          </div>
         </div>
 
       </div>
@@ -149,36 +240,13 @@
       </div>
 
       <div class="section">
-        <h3>Technical Skills</h3>
-        <ul>
-          <li class="skill">Java</li>
-          <li class="skill">JavaScript</li>
-          <li class="skill">jQuery</li>
-          <li class="skill">mootools</li>
-          
-          <li class="skill">css</li>
-          <li class="skill">less</li>
-          <li class="skill">dustjs</li>
-          <li class="skill">Python</li>
-
-          <li class="skill">Facebook API</li>
-          <li class="skill">Apache Velocity</li>
-          <li class="skill">TestNG</li>
-          <li class="skill">JUnit</li>
-          
-          <li class="skill">Postgres</li>
-          <li class="skill">Hive</li>
-          <li class="skill">mongoDB</li>
-          <li class="skill">MySQL</li>
-
-          <li class="skill">C</li>
-          <li class="skill">C++</li>
-          <li class="skill">svn</li>
-          <li class="skill">Git</li>
-
-          <li class="skill">Technical Recruiting</li>
-          <li class="skill">Time Travel</li>
-          <li class="skill">Sports Management</li>
+        <h3>Fun Facts</h3>
+        <ul class="description">
+          <li>I'd like to think I was a semi-professional Tetris player in my youth.</li>
+          <li>Pseudo-photographic memory which is quite helpful for remembering where bodies are buried in code.</li>
+          <li>Home cocktail crafting enthusiast.</li>
+          <li>Once got "Bride Tribe" accidentally tanned onto my arm.</li>
+          <li>Stepped foot in ~35 countries.</li>
         </ul>
       </div>
 
