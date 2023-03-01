@@ -25,7 +25,7 @@
           <a class="caption" href="mailto:niu@jingming.ca">niu@jingming.ca</a>
           <img class="icon" src="images/resume/email.png" />
         </li>
-        
+
         <li>
           <a class="caption" href="https://www.linkedin.com/in/jmniu" target="_blank">/in/jmniu</a>
           <img class="icon" src="images/resume/linkedin.png" />
@@ -38,6 +38,17 @@
       <div class="section">
         <h3>Work Experience</h3>
 
+        <a href="http://www.rapidapi.com" target="_blank">
+          <img src="images/resume/rapid.png" />
+        </a>
+        <div class="job">
+          <div class="company">Rapid</div>
+          <div class="role">
+            <div class="title">Principal Software Engineer</div>
+            <div class="date">August 2022 - </div>
+          </div>
+        </div>
+
         <a href="http://www.twilio.com" target="_blank">
           <img src="images/resume/twilio.png" />
         </a>
@@ -45,7 +56,7 @@
           <div class="company">Twilio</div>
           <div class="role">
             <div class="title">Technical Lead | Principal Software Engineer</div>
-            <div class="date">September 2021 - </div>
+            <div class="date">September 2021 - June 2022</div>
           </div>
 
           <div class="role">
@@ -71,19 +82,48 @@
 
         <div class="project">
           <div class="project-title">
-            Growing / Stabilizing the Team
+            Growing + Stabilizing the Team
           </div>
           <div class="project-description">
-            Currently, I'm running point on a project to scale our oncall rotations as the team plans to double in size for 2022, an initiative to deprecate one 
-            of Twilio's last standing pieces of PHP code, an initiative to define SLOs for all of our systems, and growing engineers both within the Phone Numbers 
-            organization and broader Twilio.
+            For my last role at Twilio, I was the Technical Lead for the Phone Numbers organization. In general, this
+            role involves me driving programs with the other Technical Leads in the organization, building frameworks,
+            advocating for operational stability, helping with incidents, discussing upcoming initiatives, giving
+            context on historical decisions, and mentoring younger engineers.
           </div>
+
           <div class="project-description">
-            As the tenured engineer on the team, I now serve more of a consulting / overarching role. In general, this role involves me piloting programs with the 
-            other Technical Leads in the Phone Numbers organization, helping out with incidents, providing guidance on upcoming road map items, giving context on 
-            historical decisions, and helping onboard folks to any projects. I've built a light framework for all of our REST services so that various overhead is 
-            naturally taken care of and engineers can focus on implementation. I've piloted our <a href="https://www.terraform.io/">Terraform</a> initiative which 
-            the team is adopting to stabilize our infrastructure and metrics. 
+            I built a light framework for all of Phone Numbers' REST services to standardize how service code is
+            structured. Additionally, the framework takes care of general metrics and error handling allowing engineers
+            more time to focus on implementation. I piloted our <a href="https://www.terraform.io/" target="_blank">Terraform</a>
+            initiative which the team was actively adopting to stabilize their infrastructure and metrics.
+          </div>
+
+          <div class="project-description">
+            During the 2020 US Presidential Election cycle, Twilio had to prepare for a <a href="https://www.twilio.com/blog/twilio-heightened-awareness-period-us-elections" target="_blank">significant increase</a>
+            in Voice and SMS traffic. In the months leading up to election day, Twilio had to onboard millions of
+            phone numbers so that we could support the traffic. The influx of phone numbers caused one of the
+            systems in the onboarding flow to fail. I patched + scaled our services, and re-triggered onboarding
+            steps allowing us to support the increase in traffic with no issues.
+          </div>
+
+          <div class="project-description">
+            I led an initiative to clean up our database disk usage and request count. Working with our product
+            management team, I audited all of our tables to determine the long-term need for our data. As a result,
+            we moved required data to alternative storage, deleted from active databases, and set retention policies
+            for some of our tables which brought our disk usage from 2TB down to 200GB. We also did an audit of the
+            queries to the databases. Using this audit data, we purged unused tables and removed thousands of lines
+            of dead code. Additionally, we found a set of queries running in a tight loop. I worked with an engineer
+            from a feature team to patch this, reducing the number of queries to that database cluster by 70%.
+          </div>
+
+          <div class="project-description">
+            For my last project at Twilio, I drove the splitting of the on-call rotation for the Phone Numbers
+            organization into separate ones for each of the three teams within Phone Numbers. Throughout this
+            project, we looked at each alert for the organization, determined if they were required, tagged
+            them by the team, and migrated them into Terraform (if possible). We then reconfigured PagerDuty
+            to route all alerts through the appropriate feature team's policies while leaving the underlying
+            rotation unchanged. During the transition phase, I maintained a document that detailed every change
+            that was made as well as any rollback steps, if needed.
           </div>
           <div class="project-tech">
             Technologies Used: Java, Python, PHP, MySQL
@@ -95,16 +135,18 @@
             Regulatory Compliance
           </div>
           <div class="project-description">
-            Due to the <a href="https://www.twilio.com/blog/2017/09/phone-numbers-100-countries.html">international expansion</a> Twilio had done, we had to up-level 
-            our Product offerings to comply with Global Phone Number <a href="https://www.twilio.com/guidelines/regulatory">Regulations</a>. First as part of a 6 person 
-            tiger team, I was brought in to patch the existing system to allow for customers to submit Regulatory Documents so that they could come into compliance with 
-            local regulations. 
+            Due to the <a href="https://www.twilio.com/blog/2017/09/phone-numbers-100-countries.html" target="_blank"> of Twilio's Phone
+            Number catalog, we had to up-level our Product offerings to comply with Global Phone Number
+            <a href="https://www.twilio.com/guidelines/regulatory" target="_blank">Regulations</a>. First, as part
+            of a six-member tiger team, I was brought in to patch the existing system to allow customers to submit
+            Regulatory Documents to comply with local regulations.
           </div>
           <div class="project-description">
-            After this was completed, I stayed on the team and was a lead engineer on the team that built a modernized  
-            <a href="https://www.twilio.com/docs/phone-numbers/regulatory/getting-started">Regulatory</a> Product that launched December 2019 which allows all customers 
-            to keep up with any local requirements. On top of Phone Numbers Regulatory concerns, this product now serves as the framework for the Twilio 
-            <a href="https://www.twilio.com/docs/trust-hub">Trust Hub</a> Product.
+            After the initial push, I stayed on the extended team as a Technical Lead. The team built a modernized
+            <a href="https://www.twilio.com/docs/phone-numbers/regulatory/getting-started" target="_blank">Regulatory</a>
+            Product that launched in December 2019. The product allows all customers to keep up with any local
+            requirements. On top of Phone Numbers Regulatory concerns, this product now serves as the framework
+            for the Twilio <a href="https://www.twilio.com/docs/trust-hub">Trust Hub</a> Product.
           </div>
           <div class="project-tech">
             Technologies Used: Java, Python, PHP, MySQL
@@ -116,8 +158,9 @@
             Help @ SIGNAL
           </div>
           <div class="project-description">
-            With <a href="https://www.twilio.com/flex">Flex</a> being the big product launch at SIGNAL 2018, I built a Contact Center on top of Flex that would serve as 
-            support for the conference. Over the course of the 2 day conference, this application served 2000+ interactions via Voice, SMS, Messenger, WhatsApp, and Fax.
+            At SIGNAL 2018, <a href="https://www.twilio.com/flex" target="_blank">Flex</a> was the flagship product that
+            Twilio announced. For the conference support desk, I built a Contact Center on Flex. By the end, the
+            application served over 2000 interactions using the Twilio Voice, SMS, Messenger, WhatsApp, and Fax Products.
           </div>
           <div class="project-tech">
             Technologies Used: Python, React
@@ -129,11 +172,15 @@
             API Definitions
           </div>
           <div class="project-description">
-            With the growing number of teams and products at Twilio, it became unsustainable to have the team write code for each API that Twilio introduced. 
-            As a result, we extended the Helper Library Generation platform that was built into the API Proxy so that teams would be able to define the API 
-            Proxy as well as the Helper Libraries. This platform now serves as the single point of truth for the entire Twilio API. Additionally, this project 
-            served as a key instrument in our <a href="https://www.twilio.com/blog/2017/02/easily-make-api-calls-to-any-twilio-product-using-the-new-api-explorer.html">API Explorer</a>, 
-            <a href="https://www.twilio.com/docs/runtime/functions">Functions</a>, and <a href="https://www.twilio.com/docs/usage/api">Documentation</a> Products.
+            In my first couple of years at Twilio the product portfolio grew substantially. Quickly, it became
+            unsustainable for the team to write Python code for each API change. To support the increasing number
+            of APIs, I led the team that extended the Helper Library Generation tool into the API Proxy. In this
+            platform, when a product team built a new API, they would also define any proxy level transforms using
+            JSON that the Proxy team used to write in Python. This platform now serves as the single point of truth
+            for the Twilio API and is consumed by product teams to power the
+            <a href="https://www.twilio.com/blog/2017/02/easily-make-api-calls-to-any-twilio-product-using-the-new-api-explorer.html" target="_blank">API Explorer</a>,
+            <a href="https://www.twilio.com/docs/runtime/functions" target="_blank">Functions</a>, and
+            <a href="https://www.twilio.com/docs/usage/api" target="_blank">Documentation</a> Products.
           </div>
           <div class="project-tech">
             Technologies Used: Python
@@ -145,13 +192,17 @@
             Helper Library Generation
           </div>
           <div class="project-description">
-            Twilio provides Helper Libraries in 6 languages (<a href="https://github.com/twilio/twilio-csharp">C#</a>, <a href="https://github.com/twilio/twilio-java">Java</a>, 
-            <a href="https://github.com/twilio/twilio-node">node.js</a>, <a href="https://github.com/twilio/twilio-php">PHP</a>, 
-            <a href="https://github.com/twilio/twilio-python">Python</a>, <a href="https://github.com/twilio/twilio-csharp">Ruby</a>) to simplify building on top of the API. 
-            Since they are mostly wrappers around the API, the team started building a tool to auto-generate these libraries when a change was made in the API. 
-            To start, I was in charge of building the Java and node.js libraries. After some organizational changes, I took over leadership of this project and drove it to 
-            completion with all 6 libraries being generated through the tool. This brought down the time to update all the libraries from roughly 2 weeks of engineering time 
-            (for one engineer) to 30 seconds on top of significantly reducing the number of bugs caused by removing humans from the flow.
+            As of 2016, Twilio provides client libraries in 6 languages (<a href="https://github.com/twilio/twilio-csharp" target="_blank">C#</a>,
+            <a href="https://github.com/twilio/twilio-java" target="_blank">Java</a>,
+            <a href="https://github.com/twilio/twilio-node" target="_blank">node.js</a>,
+            <a href="https://github.com/twilio/twilio-php" target="_blank">PHP</a>,
+            <a href="https://github.com/twilio/twilio-python" target="_blank">Python</a>,
+            <a href="https://github.com/twilio/twilio-csharp" target="_blank">Ruby</a>) for customers to integrate with
+            the API. Generally speaking, these libraries are wrappers around the API. To streamline changes to these
+            libraries, the team built a tool to auto-generate them for any change in the API. When I started on this
+            project, I was implementing the Java and node.js libraries. After some organizational changes, I took over
+            leadership of this project and drove it to completion. Once completed, the tool allowed us to release
+            updated client libraries more frequently, with fewer bugs, while using significantly less engineering time.
           </div>
           <div class="project-tech">
             Technologies Used: Python, node.js, Java, C#, Ruby, PHP
@@ -163,9 +214,13 @@
             Public API Proxy
           </div>
           <div class="project-description">
-            To provide a consistent experience across all of the APIs at Twilio, there exists a proxy layer that handles all incoming requests, authentication, and transforms any of the 
-            data necessary before sending it to the appropriate product stack. I added all the integrations necessary to expose the <a href="https://www.twilio.com/docs/chat">Chat</a>, 
-            <a href="https://www.twilio.com/sip-trunking">Trunking</a>, and <a href="https://www.twilio.com/notify">Notify</a> Products to the public.
+            When any API request comes into Twilio, a proxy layer tags the request with metadata, calls the
+            authentication service, and transforms request data before sending the request to the specific
+            product's stack. Once the product stack processes the API request, the proxy layer attaches
+            response metadata and standardizes the response payload before completing the API request. I
+            added all the integrations to expose the new <a href="https://www.twilio.com/docs/chat" target="_blank">Chat</a>,
+            <a href="https://www.twilio.com/sip-trunking" target="_blank">Trunking</a>, and
+            <a href="https://www.twilio.com/notify" target="_blank">Notify</a> Products to the public.
           </div>
           <div class="project-tech">
             Technologies Used: Python
@@ -173,7 +228,7 @@
         </div>
 
         <a href="http://www.tripadvisor.com" target="_blank">
-          <img src="images/resume/tripadvisor.jpg" />
+          <img src="images/resume/tripadvisor.png" />
         </a>
         <div class="job">
           <div class="company">TripAdvisor</div>
@@ -185,11 +240,13 @@
             Just For You Guides
           </div>
           <div class="project-description">
-            To further improve the <a href="https://www.tripadvisor.com/Travel_Guide-g186338-London_England.html">Travel Guide</a> experience that had recently launched, 
-            I led a project to introduce Just For You Guides to the TripAdvisor experience. On the TripAdvisor side, an interface was built for selected experts 
-            in cities around the world to add recommendations based on a defined set of tags. On the customer side, a separate interface was built to select the 
-            type of trip they were looking for based on the same set of tags. Once the user had submitted their request, they would receive a link to 
-            their specially generated guide within 24 hours.
+            As an addition to the <a href="https://www.tripadvisor.com/Travel_Guide-g186338-London_England.html" target="_blank">Travel Guide</a>
+            experience that had recently launched, I led a project to introduce Just For You Guides to improve the
+            TripAdvisor personalization experience. For (internal) experts in select cities, I built a page to add
+            recommendations based on pre-defined tags. For TripAdvisor visitors, I built a page for them to describe
+            their travel style using the same pre-defined tags. Upon personalized guide request, the system would
+            match user inputted tags to activites created by the experts and email the user a generated guide
+            within 24 hours.
           </div>
           <div class="project-tech">
             Technologies Used: Java, JavaScript, Dust.js, less, PostgreSQL
@@ -201,10 +258,11 @@
             TripAdvisor Facebook Application
           </div>
           <div class="project-description">
-            In an effort to modernize the TripAdvisor Facebook Application, I helped build a various pages as part of a complete redesign. This included Travel Map page which 
-            allowed a user to pin the places where they've visited and pages to summarize each city that the user had visited. Leveraging all the travel data for a user's friends, 
-            we were also able improve the social experience by building pages to highlight all the places a user's friends had been. Parts of this effort still exist as part of
-            <a href="https://www.tripadvisor.com/TravelMap-a_uid.761518CCF6E24A12708C8A539D3E8F64">this</a> page.
+            To modernize the TripAdvisor Facebook Application, I helped build various pages as part of a redesign. The
+            redesign enhanced, to 2013 standards, the user experience, giving users a much better experience when
+            filling out their travels. Additionally, we improved the social experience by building travel maps for
+            each friend who had connected their Facebook account with TripAdvisor. Parts of this effort still exist
+            as part of <a href="https://www.tripadvisor.com/TravelMap-a_uid.761518CCF6E24A12708C8A539D3E8F64" target="_blank">this</a> page.
           </div>
           <div class="project-tech">
             Technologies Used: Java, JavaScript, Dust.js, less, Apache Velocity, PostgreSQL
@@ -216,8 +274,10 @@
             Facebook Notifications
           </div>
           <div class="project-description">
-            Using Facebook's App-to-User Notifications, I built a platform to encourage engagement with the TripAdvisor Facebook Application based on a user's travels including cities visited, 
-            locations rated, and friends joining. This campaign drove TripAdvisor to be the top amongst all apps in monthly active users in November 2012.
+            Using Facebook's App-to-User Notifications, I built a platform to encourage engagement with the TripAdvisor
+            Facebook Application. Notifications were sent daily to users asking them to pin cities visited, rate
+            attractions, and invite friends. This campaign drove TripAdvisor to #1 among all apps in monthly active
+            users in November 2012.
           </div>
           <div class="project-tech">
             Technologies Used: Java, Hive, Hadoop
@@ -245,7 +305,7 @@
           <li>I'd like to think I was a semi-professional Tetris player in my youth.</li>
           <li>Pseudo-photographic memory which is quite helpful for remembering where bodies are buried in code.</li>
           <li>Home cocktail crafting enthusiast.</li>
-          <li>Once got "Bride Tribe" accidentally tanned onto my arm.</li>
+          <li>Once, I got "Bride Tribe" accidentally tanned onto my arm.</li>
           <li>Stepped foot in ~35 countries.</li>
         </ul>
       </div>
