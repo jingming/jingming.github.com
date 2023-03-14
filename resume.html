@@ -27,7 +27,7 @@
         </li>
 
         <li>
-          <a class="caption" href="https://www.linkedin.com/in/jmniu" target="_blank">/in/jmniu</a>
+          <a class="caption" href="https://www.linkedin.com/in/jmniu">/in/jmniu</a>
           <img class="icon" src="images/resume/linkedin.png" />
         </li>
       </ul>
@@ -38,7 +38,47 @@
       <div class="section">
         <h3>Work Experience</h3>
 
-        <a href="http://www.twilio.com" target="_blank">
+        <a href="https://www.rapidapi.com">
+          <img src="images/resume/rapid.png" />
+        </a>
+        <div class="job">
+          <div class="company">Twilio</div>
+          <div class="role">
+            <div class="title">Principal Software Engineer</div>
+            <div class="date">August 2022 - </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">
+            Deployment Pipeline
+          </div>
+          <div class="project-description">
+            As part of a team In a team of three engineers and a Product Manager, I am working to build a
+            modernized deployment pipeline for the Product Engineers at Rapid. This project simplifies the
+            current deployment process by using industry standard tools to provide a consistent, transparent,
+            and extendable experience to the engineering team. Additionally, this project is adding the
+            necessary process to the development cycle to support the planned growth of the company while
+            eliminating years of technical debt. Currently, this project is in the beta phase with teams
+            planning on onboarding in the coming quarters.
+          </div>
+
+          <div class="project-title">
+            RapidAPI for Mac Migration
+          </div>
+          <div class="project-description">
+            I am working in a tiger team to bring the technical assets of <a href="https://paw.cloud/">Paw</a>,
+            a recent acquisition, into the Rapid cluster. In a team of two engineers, we shipped the
+            ability to build new releases of the Mac app on every code change allowing the company
+            to get new developments to users faster.
+          </div>
+
+          <div class="project-tech">
+            Technologies Used: Kubernetes, Helm, Terraform, GitHub Actions
+          </div>
+        </div>
+
+        <a href="https://www.twilio.com">
           <img src="images/resume/twilio.png" />
         </a>
         <div class="job">
@@ -74,45 +114,48 @@
             Growing + Stabilizing the Team
           </div>
           <div class="project-description">
-            For my last role at Twilio, I was the Technical Lead for the Phone Numbers organization. In general, this
-            role involves me driving programs with the other Technical Leads in the organization, building frameworks,
-            advocating for operational stability, helping with incidents, discussing upcoming initiatives, giving
-            context on historical decisions, and mentoring younger engineers.
+            For my last role at Twilio, I was the Technical Lead for the Phone Numbers organization.
+            In general, this role involved driving programs with the other Technical Leads in the
+            organization, building frameworks, advocating for operational stability, helping with incidents,
+            discussing upcoming initiatives, giving context on historical decisions, and mentoring younger
+            engineers.
           </div>
 
           <div class="project-description">
-            I built a light framework for all of Phone Numbers' REST services to standardize how service code is
-            structured. Additionally, the framework takes care of general metrics and error handling allowing engineers
-            more time to focus on implementation. I piloted our <a href="https://www.terraform.io/" target="_blank">Terraform</a>
-            initiative which the team was actively adopting to stabilize their infrastructure and metrics.
+            I built a light framework for Phone Numbers' REST services to standardize how service code is
+            structured. The framework takes care of general metrics and error handling, allowing engineers
+            more time to focus on implementation. I piloted our <a href="https://www.terraform.io/">Terraform</a>
+            initiative which the team adopted to stabilize their infrastructure and metrics.
           </div>
 
           <div class="project-description">
-            During the 2020 US Presidential Election cycle, Twilio had to prepare for a <a href="https://www.twilio.com/blog/twilio-heightened-awareness-period-us-elections" target="_blank">significant increase</a>
-            in Voice and SMS traffic. In the months leading up to election day, Twilio had to onboard millions of
-            phone numbers so that we could support the traffic. The influx of phone numbers caused one of the
-            systems in the onboarding flow to fail. I patched + scaled our services, and re-triggered onboarding
-            steps allowing us to support the increase in traffic with no issues.
+            During the 2020 US Presidential Election cycle, Twilio had to prepare for a
+            <a href="https://www.twilio.com/blog/twilio-heightened-awareness-period-us-elections">significant increase</a>
+            in Voice and SMS traffic. In the months leading up to election day, Twilio on-boarded millions of
+            phone numbers to support  traffic. The influx of phone numbers caused one of the systems in the
+            onboarding flow to fail. I patched and scaled our services, and re-triggered onboarding steps which
+            allowed us to support the increased traffic without issues.
           </div>
 
           <div class="project-description">
             I led an initiative to clean up our database disk usage and request count. Working with our product
-            management team, I audited all of our tables to determine the long-term need for our data. As a result,
-            we moved required data to alternative storage, deleted from active databases, and set retention policies
-            for some of our tables which brought our disk usage from 2TB down to 200GB. We also did an audit of the
-            queries to the databases. Using this audit data, we purged unused tables and removed thousands of lines
-            of dead code. Additionally, we found a set of queries running in a tight loop. I worked with an engineer
-            from a feature team to patch this, reducing the number of queries to that database cluster by 70%.
+            management team, I audited our tables to determine the long-term need for our data. As a result,
+            we moved required data to alternative storage, deleted from active databases, and set retention
+            policies for some of our tables which brought our disk usage from 2TB down to 200GB. I also did
+            an audit of the queries to the databases. Using this audit data, we purged unused tables and
+            removed thousands of lines of dead code. Additionally, I found a set of queries running in a tight
+            loop. I worked with an engineer from a feature team to patch this, reducing the number of
+            queries to that database cluster by 70%.
           </div>
 
           <div class="project-description">
             For my last project at Twilio, I drove the splitting of the on-call rotation for the Phone Numbers
             organization into separate ones for each of the three teams within Phone Numbers. Throughout this
-            project, we looked at each alert for the organization, determined if they were required, tagged
-            them by the team, and migrated them into Terraform (if possible). We then reconfigured PagerDuty
-            to route all alerts through the appropriate feature team's policies while leaving the underlying
-            rotation unchanged. During the transition phase, I maintained a document that detailed every change
-            that was made as well as any rollback steps, if needed.
+            project, I looked at each alert for the organization, determined if they were required, tagged
+            them by the team, and migrated them into Terraform. I then reconfigured PagerDuty to route all
+            alerts through the appropriate feature team's policies while leaving the underlying rotation
+            unchanged. During the transition phase, I maintained a document that detailed every change that
+            was made as well as any rollback steps, if needed.
           </div>
           <div class="project-tech">
             Technologies Used: Java, Python, PHP, MySQL
@@ -124,18 +167,19 @@
             Regulatory Compliance
           </div>
           <div class="project-description">
-            Due to the <a href="https://www.twilio.com/blog/2017/09/phone-numbers-100-countries.html" target="_blank"> of Twilio's Phone
-            Number catalog, we had to up-level our Product offerings to comply with Global Phone Number
-            <a href="https://www.twilio.com/guidelines/regulatory" target="_blank">Regulations</a>. First, as part
-            of a six-member tiger team, I was brought in to patch the existing system to allow customers to submit
-            Regulatory Documents to comply with local regulations.
+            Due to <a href="https://www.twilio.com/blog/2017/09/phone-numbers-100-countries.html">international expansion</a>
+            of Twilio's Phone Number catalog, we had to up-level our Product offerings to comply with
+            Global Phone Number <a href="https://www.twilio.com/guidelines/regulatory">Regulations</a>.
+            First, as part of a six-member tiger team, I was brought in to patch the existing system
+            to allow customers to submit Regulatory Documents to comply with local regulations.
           </div>
           <div class="project-description">
-            After the initial push, I stayed on the extended team as a Technical Lead. The team built a modernized
-            <a href="https://www.twilio.com/docs/phone-numbers/regulatory/getting-started" target="_blank">Regulatory</a>
-            Product that launched in December 2019. The product allows all customers to keep up with any local
-            requirements. On top of Phone Numbers Regulatory concerns, this product now serves as the framework
-            for the Twilio <a href="https://www.twilio.com/docs/trust-hub">Trust Hub</a> Product.
+            After the initial push, I stayed on the extended team as a Technical Lead. The team built a
+            modernized <a href="https://www.twilio.com/docs/phone-numbers/regulatory/getting-started">Regulatory</a>
+            Product that launched in December 2019. The product allows all customers to keep up with
+            any local phone number requirements. On top of Phone Numbers Regulatory concerns, this
+            product now serves as the framework for the Twilio
+            <a href="https://www.twilio.com/docs/trust-hub">Trust Hub</a> Product.
           </div>
           <div class="project-tech">
             Technologies Used: Java, Python, PHP, MySQL
@@ -147,9 +191,10 @@
             Help @ SIGNAL
           </div>
           <div class="project-description">
-            At SIGNAL 2018, <a href="https://www.twilio.com/flex" target="_blank">Flex</a> was the flagship product that
-            Twilio announced. For the conference support desk, I built a Contact Center on Flex. By the end, the
-            application served over 2000 interactions using the Twilio Voice, SMS, Messenger, WhatsApp, and Fax Products.
+            At SIGNAL 2018, <a href="https://www.twilio.com/flex">Flex</a> was the flagship product that
+            Twilio announced. For the conference support desk, I built a Contact Center on Flex. By the
+            end, the application served over 2000 interactions using the Twilio Voice, SMS, Messenger,
+            WhatsApp, and Fax Products.
           </div>
           <div class="project-tech">
             Technologies Used: Python, React
@@ -162,14 +207,14 @@
           </div>
           <div class="project-description">
             In my first couple of years at Twilio the product portfolio grew substantially. Quickly, it became
-            unsustainable for the team to write Python code for each API change. To support the increasing number
-            of APIs, I led the team that extended the Helper Library Generation tool into the API Proxy. In this
-            platform, when a product team built a new API, they would also define any proxy level transforms using
-            JSON that the Proxy team used to write in Python. This platform now serves as the single point of truth
-            for the Twilio API and is consumed by product teams to power the
-            <a href="https://www.twilio.com/blog/2017/02/easily-make-api-calls-to-any-twilio-product-using-the-new-api-explorer.html" target="_blank">API Explorer</a>,
-            <a href="https://www.twilio.com/docs/runtime/functions" target="_blank">Functions</a>, and
-            <a href="https://www.twilio.com/docs/usage/api" target="_blank">Documentation</a> Products.
+            unsustainable for the team to write Python code for each API change. To support the increasing
+            number of APIs, I led the team that extended the Helper Library Generation tool into the API Proxy.
+            In this platform, when a product team built a new API, they would also define any proxy level
+            transformations using JSON that the Proxy team used to write in Python. This platform now serves as
+            the single point of truth for the Twilio API and is consumed by product teams to power the
+            <a href="https://www.twilio.com/blog/2017/02/easily-make-api-calls-to-any-twilio-product-using-the-new-api-explorer.html">API Explorer</a>,
+            <a href="https://www.twilio.com/docs/runtime/functions">Functions</a>, and
+            <a href="https://www.twilio.com/docs/usage/api">Documentation</a> Products.
           </div>
           <div class="project-tech">
             Technologies Used: Python
@@ -181,17 +226,15 @@
             Helper Library Generation
           </div>
           <div class="project-description">
-            As of 2016, Twilio provides client libraries in 6 languages (<a href="https://github.com/twilio/twilio-csharp" target="_blank">C#</a>,
-            <a href="https://github.com/twilio/twilio-java" target="_blank">Java</a>,
-            <a href="https://github.com/twilio/twilio-node" target="_blank">node.js</a>,
-            <a href="https://github.com/twilio/twilio-php" target="_blank">PHP</a>,
-            <a href="https://github.com/twilio/twilio-python" target="_blank">Python</a>,
-            <a href="https://github.com/twilio/twilio-csharp" target="_blank">Ruby</a>) for customers to integrate with
-            the API. Generally speaking, these libraries are wrappers around the API. To streamline changes to these
-            libraries, the team built a tool to auto-generate them for any change in the API. When I started on this
-            project, I was implementing the Java and node.js libraries. After some organizational changes, I took over
-            leadership of this project and drove it to completion. Once completed, the tool allowed us to release
-            updated client libraries more frequently, with fewer bugs, while using significantly less engineering time.
+            As of 2016, Twilio provides client libraries in 6 languages (<a href="https://github.com/twilio/twilio-csharp">C#</a>,
+            <a href="https://github.com/twilio/twilio-java">Java</a>, <a href="https://github.com/twilio/twilio-node">node.js</a>,
+            <a href="https://github.com/twilio/twilio-php">PHP</a>, <a href="https://github.com/twilio/twilio-python">Python</a>,
+            <a href="https://github.com/twilio/twilio-csharp">Ruby</a>) for customers to integrate with the API.
+            Generally speaking, these libraries are wrappers around the API. To streamline changes to these libraries,
+            the team built a tool to auto-generate them for any change in the API. When I started on this project,
+            I was implementing the Java and node.js libraries. Eventually, I took over leadership of this project
+            and drove it to completion. Once completed, the tool allowed us to release updated client libraries more
+            frequently, with fewer bugs, while using significantly less engineering time.
           </div>
           <div class="project-tech">
             Technologies Used: Python, node.js, Java, C#, Ruby, PHP
@@ -203,20 +246,19 @@
             Public API Proxy
           </div>
           <div class="project-description">
-            When any API request comes into Twilio, a proxy layer tags the request with metadata, calls the
-            authentication service, and transforms request data before sending the request to the specific
-            product's stack. Once the product stack processes the API request, the proxy layer attaches
-            response metadata and standardizes the response payload before completing the API request. I
-            added all the integrations to expose the new <a href="https://www.twilio.com/docs/chat" target="_blank">Chat</a>,
-            <a href="https://www.twilio.com/sip-trunking" target="_blank">Trunking</a>, and
-            <a href="https://www.twilio.com/notify" target="_blank">Notify</a> Products to the public.
+            When any API request comes into Twilio, a proxy layer tags the request with metadata, calls the authentication
+            service, and transforms request data before sending the request to the specific product's stack. Once
+            the product stack processes the API request, the proxy layer attaches response metadata and standardizes the
+            response payload before completing the API request. I added all the integrations to expose the new
+            <a href="https://www.twilio.com/docs/chat">Chat</a>, <a href="https://www.twilio.com/sip-trunking">Trunking</a>,
+            and <a href="https://www.twilio.com/notify">Notify</a> Products to the public.
           </div>
           <div class="project-tech">
             Technologies Used: Python
           </div>
         </div>
 
-        <a href="http://www.tripadvisor.com" target="_blank">
+        <a href="https://www.tripadvisor.com">
           <img src="images/resume/tripadvisor.png" />
         </a>
         <div class="job">
@@ -229,13 +271,12 @@
             Just For You Guides
           </div>
           <div class="project-description">
-            As an addition to the <a href="https://www.tripadvisor.com/Travel_Guide-g186338-London_England.html" target="_blank">Travel Guide</a>
+            As an addition to the <a href="https://www.tripadvisor.com/Travel_Guide-g186338-London_England.html">Travel Guide</a>
             experience that had recently launched, I led a project to introduce Just For You Guides to improve the
             TripAdvisor personalization experience. For (internal) experts in select cities, I built a page to add
-            recommendations based on pre-defined tags. For TripAdvisor visitors, I built a page for them to describe
-            their travel style using the same pre-defined tags. Upon personalized guide request, the system would
-            match user inputted tags to activites created by the experts and email the user a generated guide
-            within 24 hours.
+            recommendations based on predefined tags. For TripAdvisor visitors, I built a page for them to describe
+            their travel style using the same predefined tags. Upon personalized guide request, the system would match
+            user inputted tags to activities created by the experts and email the user a generated guide within 24 hours.
           </div>
           <div class="project-tech">
             Technologies Used: Java, JavaScript, Dust.js, less, PostgreSQL
@@ -247,11 +288,11 @@
             TripAdvisor Facebook Application
           </div>
           <div class="project-description">
-            To modernize the TripAdvisor Facebook Application, I helped build various pages as part of a redesign. The
-            redesign enhanced, to 2013 standards, the user experience, giving users a much better experience when
-            filling out their travels. Additionally, we improved the social experience by building travel maps for
-            each friend who had connected their Facebook account with TripAdvisor. Parts of this effort still exist
-            as part of <a href="https://www.tripadvisor.com/TravelMap-a_uid.761518CCF6E24A12708C8A539D3E8F64" target="_blank">this</a> page.
+            To modernize the TripAdvisor Facebook Application, I helped build various pages as part of a redesign.
+            The redesign enhanced, to 2013 standards, the user experience, giving users a much better experience
+            when filling out their travels. Additionally, we improved the social experience by building travel
+            maps for each friend who had connected their Facebook account with TripAdvisor. Parts of this effort
+            still exist as part of <a href="https://www.tripadvisor.com/TravelMap-a_uid.761518CCF6E24A12708C8A539D3E8F64">this</a> page.
           </div>
           <div class="project-tech">
             Technologies Used: Java, JavaScript, Dust.js, less, Apache Velocity, PostgreSQL
@@ -278,7 +319,7 @@
       <div class="section">
         <h3>Education</h3>
 
-        <a href="http://www.uwaterloo.ca" target="_blank">
+        <a href="https://www.uwaterloo.ca">
           <img src="images/resume/uw.jpg" />
         </a>
         <div class="job">
